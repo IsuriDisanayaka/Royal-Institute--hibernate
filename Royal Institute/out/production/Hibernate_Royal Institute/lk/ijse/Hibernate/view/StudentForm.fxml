@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="652.0" prefWidth="799.0" style="-fx-background-color: #303952;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.Hibernate.controller.StudentFormController">
+   <children>
+      <Label alignment="CENTER_RIGHT" layoutX="40.0" layoutY="41.0" prefHeight="45.0" prefWidth="264.0" style="-fx-background-color: lightblue;" text="Student's Details" textFill="#302b6f">
+         <font>
+            <Font name="Berlin Sans FB" size="33.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="CLOSED_HAND" />
+         </cursor>
+      </Label>
+      <JFXTextField fx:id="txtId" layoutX="46.0" layoutY="140.0" prefHeight="32.0" prefWidth="213.0" promptText="ID" style="-fx-background-color: white;">
+         <font>
+            <Font name="Lucida Console" size="18.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtName" layoutX="44.0" layoutY="190.0" prefHeight="32.0" prefWidth="389.0" promptText="Name" style="-fx-background-color: white;">
+         <font>
+            <Font name="Lucida Console" size="18.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtAddress" layoutX="46.0" layoutY="236.0" prefHeight="32.0" prefWidth="473.0" promptText="Address" style="-fx-background-color: white;">
+         <font>
+            <Font name="Lucida Console" size="18.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtContact" layoutX="44.0" layoutY="280.0" prefHeight="32.0" prefWidth="300.0" promptText="Contact" style="-fx-background-color: white;">
+         <font>
+            <Font name="Lucida Console" size="18.0" />
+         </font>
+      </JFXTextField>
+      <DatePicker fx:id="dteDate" layoutX="44.0" layoutY="322.0" promptText="Date Of Birth" />
+      <Button fx:id="btnSave" layoutX="389.0" layoutY="362.0" mnemonicParsing="false" onAction="#SaveOnAction" prefHeight="25.0" prefWidth="140.0" style="-fx-background-color: yellow;" text="Save" textFill="#030303">
+         <font>
+            <Font name="Arial Narrow Bold" size="20.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <TableView fx:id="tblStudent" layoutX="43.0" layoutY="427.0" prefHeight="165.0" prefWidth="737.0">
+        <columns>
+          <TableColumn fx:id="colID" prefWidth="75.0" text="ID" />
+          <TableColumn fx:id="colName" prefWidth="144.0" text="Name" />
+            <TableColumn fx:id="colAddress" prefWidth="128.0" text="Address" />
+            <TableColumn fx:id="colContact" prefWidth="108.0" text="Contact" />
+            <TableColumn fx:id="colBirth" prefWidth="111.0" text="Date Of Birth" />
+            <TableColumn fx:id="colGender" prefWidth="168.0" text="Gender" />
+        </columns>
+      </TableView>
+      <TextField fx:id="txtSerach" layoutX="466.0" layoutY="68.0" onAction="#SearchOnAction" prefHeight="25.0" prefWidth="293.0" promptText="Search" style="-fx-background-color: white;">
+         <font>
+            <Font name="Bell MT Bold" size="18.0" />
+         </font>
+      </TextField>
+      <ComboBox fx:id="cmbGender" layoutX="44.0" layoutY="368.0" prefWidth="150.0" promptText="Gender" />
+      <Button fx:id="btnUpdate" layoutX="584.0" layoutY="172.0" mnemonicParsing="false" onAction="#UpdateOnAction" prefHeight="25.0" prefWidth="140.0" style="-fx-background-color: lightgreen;" text="Update" textFill="#030303">
+         <font>
+            <Font name="Arial Narrow Bold" size="20.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <ImageView fitHeight="45.0" fitWidth="56.0" layoutX="18.0" layoutY="41.0" onMouseClicked="#StudentFrom">
+         <image>
+            <Image url="@../asserts/Student.jpg" />
+         </image>
+      </ImageView>
+      <Button fx:id="btnDelete" layoutX="584.0" layoutY="218.0" mnemonicParsing="false" onAction="#DeleteOnAction" prefHeight="25.0" prefWidth="140.0" style="-fx-background-color: red;" text="Delete" textFill="#030303">
+         <font>
+            <Font name="Arial Narrow Bold" size="20.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+   </children>
+</AnchorPane>

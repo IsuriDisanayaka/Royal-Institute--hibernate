@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="border" prefHeight="668.0" prefWidth="942.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.Hibernate.controller.SelectionFormController">
+   <children>
+      <AnchorPane prefHeight="45.0" prefWidth="942.0" style="-fx-background-color: #1b1b1d;">
+         <children>
+            <Label fx:id="lblTime" layoutX="477.0" layoutY="5.0" prefHeight="45.0" prefWidth="171.0" textFill="#f5efef">
+               <font>
+                  <Font name="System Bold" size="27.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblDate" layoutX="700.0" layoutY="5.0" prefHeight="34.0" prefWidth="171.0" textFill="#f5efef">
+               <font>
+                  <Font name="System Bold" size="27.0" />
+               </font>
+            </Label>
+         </children>
+         <cursor>
+            <Cursor fx:constant="OPEN_HAND" />
+         </cursor></AnchorPane>
+      <AnchorPane layoutY="88.0" prefHeight="607.0" prefWidth="149.0" style="-fx-background-color: #2C3A47;">
+         <children>
+            <JFXButton alignment="BOTTOM_LEFT" layoutX="-2.0" layoutY="503.0" onAction="#RegistationForm" prefHeight="44.0" prefWidth="149.0" style="-fx-background-color: #1b1b1d;" text="Registation" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </JFXButton>
+            <JFXButton alignment="TOP_CENTER" layoutX="-2.0" layoutY="337.0" onAction="#CourseFromOnAction" prefHeight="44.0" prefWidth="149.0" style="-fx-background-color: #1b1b1d;" text="Course" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </JFXButton>
+            <JFXButton alignment="TOP_CENTER" layoutX="-5.0" layoutY="162.0" onAction="#StudentFromOnAction" prefHeight="45.0" prefWidth="149.0" style="-fx-background-color: #1b1b1d;" text="Student" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </JFXButton>
+            <ImageView fitHeight="109.0" fitWidth="149.0" layoutX="-5.0" layoutY="240.0" onMouseClicked="#CourseFrom">
+               <image>
+                  <Image url="@../asserts/course.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="124.0" fitWidth="150.0" layoutX="-3.0" layoutY="47.0" onMouseClicked="#StudentFrom">
+               <image>
+                  <Image url="@../asserts/Student.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="87.0" fitWidth="149.0" layoutX="-5.0" layoutY="423.0">
+               <image>
+                  <Image url="@../asserts/reg.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="mainRoot" layoutX="143.0" layoutY="43.0" prefHeight="652.0" prefWidth="799.0" style="-fx-background-color: #1b1b1d;" />
+      <ImageView fitHeight="89.0" fitWidth="143.0">
+         <image>
+            <Image url="@../asserts/royal.jpg" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+   </children>
+</AnchorPane>
